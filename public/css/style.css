@@ -28,7 +28,7 @@ header {
   background: #1a1917;
   vertical-align: middle;
   justify-content: center;
-  z-index: 999;
+  z-index: 9999;
 }
 .logoLink {
   position: fixed;
@@ -38,7 +38,7 @@ header {
   font-size: 2em;
   line-height: 10vh;
   transition-duration: 500ms;
-  z-index: 999;
+  z-index: 9999;
 }
 .logoLink:hover {
   color: var(--blueColor);
@@ -59,6 +59,7 @@ menu {
   text-transform: uppercase;
   margin-left: 2vw;
   margin-right: 2vw;
+  z-index: 0;
 }
 .menuItem:hover {
   color: var(--blueColor);
