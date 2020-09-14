@@ -1,23 +1,15 @@
 @media only screen and (max-width: 1280px) {
     header {
-        border-bottom: 4px solid blue;
+        border-bottom: 4px solid red;
     }
     menu {
-        display: none;
-        z-index: -1;
+        display: block;
         position: fixed;
-        top: calc(10vh + 4px);
+        top: 10vh;
         background: #1a1917;
+        transition-duration: 500ms;
         width: 100vw;
-        animation: showMenu 400ms linear;
-    }
-    @keyframes showMenu {
-        0% {
-            left: -100%;
-        }
-        50% {
-            left: 0;
-        }
+        z-index: -1;
     }
     .menuItem {
         display: block;

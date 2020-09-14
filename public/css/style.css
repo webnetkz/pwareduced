@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     --whiteColor: rgb(255, 255, 255);
-    --blueColor: rgb(86, 102, 246);
+    --redColor: rgb(255, 0, 0);
 }
 html, body {
     font-family: sans-serif;
@@ -10,10 +10,10 @@ html, body {
     scroll-behavior: smooth;
 }
 .show {
-  display: block;
+  left: 0;
 }
 .hide {
-  display: none;
+  left: -100%;
 }
 .menuBar {
   display: none;
@@ -41,8 +41,8 @@ header {
   z-index: 9999;
 }
 .logoLink:hover {
-  color: var(--blueColor);
-  text-shadow: 0 0 2px var(--blueColor);
+  color: var(--redColor);
+  text-shadow: 0 0 2px var(--redColor);
 }
 menu {
   display: flex;
@@ -62,7 +62,35 @@ menu {
   z-index: 0;
 }
 .menuItem:hover {
-  color: var(--blueColor);
-  text-shadow: 0 0 2px var(--blueColor);
+  color: var(--redColor);
+  text-shadow: 0 0 2px var(--redColor);
+}
+.slider {
+  position: relative;
+  top: 5vh;
+  left: 0;
+  height: 92.2vh;
+  background-image: url('../img/photo/1.webp');
+  background-size: cover;
+}
+.fiveBlock {
+  display: flex;
+}
+.oneFive {
+  display: flex;
+  flex-wrap: wrap;
+}
+.oneFive, .oneFive1 {
+  height: 50vw;
+  width: 50vw;
+}
+.oneFive1 {
+  background-image: url('../img/photo/3.jpg');
+  background-size: cover;
+}
+.twoFive {
+  height: 25vw;
+  width: 25vw;
+  border: 1px solid black;
 }
 
