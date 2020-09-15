@@ -1,0 +1,10 @@
+@keyframes bgBlur {
+    50% {
+        filter: blur(4px);
+    }
+}
+@keyframes bgContrast {
+    50% {
+        filter: contrast(50%);
+    }
+}

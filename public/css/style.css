@@ -1,19 +1,16 @@
+@import "helper.css";
+@import "flex.css";
+@import "animations.css";
 * {
-    margin: 0;
-    padding: 0;
-    --whiteColor: rgb(255, 255, 255);
-    --redColor: rgb(255, 0, 0);
+  --whiteColor: rgb(255, 255, 255);
+  --redColor: rgb(255, 0, 0);
+  --bgColor: #1a1917;
 }
 html, body {
-    font-family: sans-serif;
-    background-color: var(--whiteColor);
-    scroll-behavior: smooth;
-}
-.show {
-  left: 0;
-}
-.hide {
-  left: -100%;
+  font-family: sans-serif;
+  background-color: var(--whiteColor);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .menuBar {
   display: none;
@@ -25,7 +22,7 @@ header {
   left: 0;
   width: 100vw;
   height: 10vh;
-  background: #1a1917;
+  background: var(--bgColor);
   vertical-align: middle;
   justify-content: center;
   z-index: 9999;
@@ -65,32 +62,42 @@ menu {
   color: var(--redColor);
   text-shadow: 0 0 2px var(--redColor);
 }
+#content {
+  margin-top: 7vh;
+}
 .slider {
   position: relative;
-  top: 5vh;
+  top: 7vh;
   left: 0;
-  height: 92.2vh;
+  height: 91vh;
   background-image: url('../img/photo/1.webp');
   background-size: cover;
 }
-.fiveBlock {
-  display: flex;
+#content div {
+  height: 100vh;
 }
-.oneFive {
-  display: flex;
-  flex-wrap: wrap;
-}
-.oneFive, .oneFive1 {
-  height: 50vw;
-  width: 50vw;
-}
-.oneFive1 {
+.first {
   background-image: url('../img/photo/3.jpg');
   background-size: cover;
+  animation: bgContrast 5s infinite;
 }
-.twoFive {
-  height: 25vw;
-  width: 25vw;
-  border: 1px solid black;
+.second {
+  max-height: 50vh!important;
 }
+.second div {
+  vertical-align: top;
+  display: inline-block;
+  height: 100%!important;
+  width: 24.8vw;
+}
+.third {
+  background-image: url('../img/photo/2.jpg');
+  background-size: cover;
+}
+.fourth {
+  background-image: url('../img/photo/4.jpg');
+  background-size: cover;
+  animation: bgBlur 5s infinite;
+}
+
 

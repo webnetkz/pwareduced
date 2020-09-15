@@ -23,15 +23,21 @@
         <div class="slider">
 
         </div>
-        <div class="fiveBlock">
-          <div class="oneFive1"></div>
-          <div class="oneFive">
-            <div class="twoFive"></div>
-            <div class="twoFive"></div>
-            <div class="twoFive"></div>
-            <div class="twoFive"></div>
+        <section class="flex" id="content">
+          <div class="half first">
+
           </div>
-        </div>
+          <div class="half">
+              <div class="second">
+                <div class="third hoverImg"></div>
+                <div>123</div>
+              </div>
+              <div class="second">
+                <div>123123123</div>
+                <div class="fourth"></div>
+              </div>
+          </div>
+        </section>
         <script>
           // Проверка браузера на поддержку service worker
          if('serviceWorker' in navigator) {
@@ -48,9 +54,6 @@
           let x = menu.classList.toggle('hide', false);
 
           console.log(x);
-          //if() {
-
-          //}
        
         }
       </script>
