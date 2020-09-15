@@ -4,6 +4,7 @@
     }
     menu {
         display: block;
+        left: -100%;
         position: fixed;
         top: 10vh;
         background: #1a1917;
@@ -18,11 +19,23 @@
     .logoLink {
         left: 10px;
     }
-    .menuBar {
+    .menuMob {
         display: block;
         position: absolute;
         height: 50%;
         top: 25%;
         right: 20px;
+        transition-duration: 500ms;
+    }
+    .closeMenuMob {
+        display: block;
+        position: fixed;
+        height: 7vh;
+        top: 1.7vh;
+        right: -20%;
+        transition-duration: 300ms;
+      }
+    .slider {
+        background-position-x: 54%;
     }
 }

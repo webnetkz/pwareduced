@@ -12,7 +12,10 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-.menuBar {
+.menuMob {
+  display: none;
+}
+.closeMenuMob {
   display: none;
 }
 header {
@@ -69,7 +72,7 @@ menu {
   position: relative;
   top: 7vh;
   left: 0;
-  height: 91vh;
+  height: 92vh;
   background-image: url('../img/photo/1.webp');
   background-size: cover;
 }

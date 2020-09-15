@@ -24,9 +24,7 @@
 
         </div>
         <section class="flex" id="content">
-          <div class="half first">
-
-          </div>
+          <div class="half first"></div>
           <div class="half">
               <div class="second">
                 <div class="third hoverImg"></div>
@@ -48,13 +46,21 @@
          }
       </script>
       <script>
-        function showMenu() {
-        let menu = document.getElementsByTagName('menu');
+        function showMenu(elem) {
+          let menu = document.querySelector('menu');
+          let closeMenuMob = document.querySelector('.closeMenuMob');
 
-          let x = menu.classList.toggle('hide', false);
+          elem.style.opacity = '0';
+          closeMenuMob.style.right = '10px';
+          menu.style.left = '0px';
+        }
+        function closeMenu(elem) {
+          let menu = document.querySelector('menu');
+          let menuMob = document.querySelector('.menuMob');
 
-          console.log(x);
-       
+          menuMob.style.opacity = '1';
+          elem.style.right = '-20%';
+          menu.style.left = '-100%';
         }
       </script>
       <script src="public/js/main.js"></script>
