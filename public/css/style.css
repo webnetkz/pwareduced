@@ -96,11 +96,12 @@ menu {
 .third {
   background-image: url('../img/photo/2.jpg');
   background-size: cover;
+  animation: rotateCart 7s infinite;
 }
 .fourth {
   background-image: url('../img/photo/4.jpg');
   background-size: cover;
-  animation: bgBlur 5s infinite;
+  animation: bgBlur 10s infinite;
 }
 
 

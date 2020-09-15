@@ -27,7 +27,7 @@
           <div class="half first"></div>
           <div class="half">
               <div class="second">
-                <div class="third hoverImg"></div>
+                <div class="third"></div>
                 <div>123</div>
               </div>
               <div class="second">
@@ -44,24 +44,6 @@
                  console.log("Service Worker Registered");
              });
          }
-      </script>
-      <script>
-        function showMenu(elem) {
-          let menu = document.querySelector('menu');
-          let closeMenuMob = document.querySelector('.closeMenuMob');
-
-          elem.style.opacity = '0';
-          closeMenuMob.style.right = '10px';
-          menu.style.left = '0px';
-        }
-        function closeMenu(elem) {
-          let menu = document.querySelector('menu');
-          let menuMob = document.querySelector('.menuMob');
-
-          menuMob.style.opacity = '1';
-          elem.style.right = '-20%';
-          menu.style.left = '-100%';
-        }
       </script>
       <script src="public/js/main.js"></script>
     </body>
