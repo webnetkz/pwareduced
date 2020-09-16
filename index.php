@@ -28,13 +28,18 @@
           <div class="half">
               <div class="second">
                 <div class="third"></div>
-                <div>123</div>
+                <div class="fifth">123</div>
               </div>
               <div class="second">
-                <div>123123123</div>
-                <div class="fourth"></div>
+                <div class="sixth">
+                  <hr class="line">
+                  EXTREME
+                  <p>DOWNHILL</p>
+                </div>
+                <div class="fourth" id="qwe"></div>
               </div>
           </div>
+
         </section>
         <script>
           // Проверка браузера на поддержку service worker
