@@ -20,15 +20,5 @@
 
     <body>
         <?php require_once "public/components/header.php"; ?>
-        <script>
-          // Проверка браузера на поддержку service worker
-         if('serviceWorker' in navigator) {
-             // Подключаем sw
-             navigator.serviceWorker.register('/sw.js').then(function() {
-                 console.log("Service Worker Registered");
-             });
-         }
-      </script>
-      <script src="public/js/main.js"></script>
-    </body>
-</html>
+        <?php require_once "public/components/footer.php"; ?>
+

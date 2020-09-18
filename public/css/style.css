@@ -79,11 +79,13 @@ menu {
   width: 100vw;
   background-image: url('../img/photo/1.webp');
   background-size: cover;
+
 }
 #content div {
   height: 100vh;
 }
 .first {
+  height: 50vw;
   background-image: url('../img/photo/3.jpg');
   background-size: cover;
   animation: bgContrast 5s infinite;

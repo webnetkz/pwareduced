@@ -1,3 +1,9 @@
+"use strict";
+import {parallaxScroll} from './moduls/parallaxScroll.js';
+parallaxScroll('.slider');
+import {darkMod} from './moduls/darkMod.js';
+//darkMod();
+
 function showMenu(elem) {
     let menu = document.querySelector('menu');
     let closeMenuMob = document.querySelector('.closeMenuMob');
